@@ -12,19 +12,19 @@ body, html {
 #myHeader{
     text-align: center;
     color: white;
-    padding-top: 45px;
+    padding-top: 3px;
 }
 
-#button-number{
-    padding: 45px;
-    
-}
 
 #button-blue{
     padding: 45px;
     margin-top: 95px;
     height: 150px;
     width: 150px;
+    background: url("../images/whitecrystal.jpeg");
+    border-radius: 2.25rem;
+     border-color: #007bff00; 
+    
 }
 
 #button-red{
@@ -32,7 +32,9 @@ body, html {
     margin-top: 95px;
     height: 150px;
     width: 150px;
-    background: url("../images/11-112198_crystal-cluster-snowflake-clip-art-diamond-icon-flat-png.png")
+    background: url("../images/myLightBlueCrystal.jpg");
+    border-radius: 2.25rem;
+     border-color: #007bff00; 
     
 }
 
@@ -41,6 +43,11 @@ body, html {
     margin-top: 95px;
     height: 150px;
     width: 150px;
+    background: url("../images/lightBluecrystal.jpg");
+    background-color: rgba(181, 196, 198, 0);
+    border-radius: 2.25rem;
+     border-color: #007bff00; 
+    
     
 }
 
@@ -49,39 +56,14 @@ body, html {
     margin-top: 95px;
     height: 150px;
     width: 150px;
-    background: url("../images/9a65e63f636ab0ad3adf834505563166.jpg");
-    
-}
-
-
-
-#button-score{
-    padding: 45px;
-    margin-top: 95px;
-    margin-left: -49px;  
-}
-#button-win{
-    padding: 45px;
-    margin-top: 95px;     
-}
-
-#button-losses{
-    padding: 45px;
-    margin-top: 95px;     
-  
-}
-
-
-
-#button-number {
-    padding: 45px;
-    margin-left: -49px;
-    margin-top: -20px;
+    background: url("../images/darkBlueCrystal.jpeg");
+    border-radius: 2.25rem;
+    border-color: #007bff00; 
 }
 
 #diamonds{
     margin-left: 19px; 
-    margin-top: -40px;
+    margin-top: -63px;
 }
 
 #winOrLose{
@@ -91,9 +73,65 @@ body, html {
 
 #winOrLose {
     margin-left: -198px;
+    margin-top: -83px;
 }
 
-p {
-    margin-top: -25px;
+#myParagraph {
+    margin-top: -14px;
+    color: rgb(12, 131, 243);
+}
+
+#nowScore{
+    margin-top: 36px;
+    color:   rgb(47, 67, 245);
+    font-size: 43px;
+}
+
+
+.playNumber{
+    font-size: 37px; 
+    font-weight: 900;
+    text-align: center;
+}
+
+#givenNumber{
+    margin-top: -15px;
+    color: rgb(47, 67, 245);
+}
+
+#myCrystalName{
+    font-size: 109px;
+    margin-top: 52px;
+}
+
+#myLittleReset{
+    text-align: center;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    color: white
+}
+
+#myLittleReset{
+    border-radius: 5.25rem;
+    background: rgba(54, 104, 211, 0);
+    color:blue;
+}
+
+#myLittleStartNewGame{
+    border-radius: 5.25rem; 
+    background:rgba(54, 104, 211, 0); 
+    color: blue;
+}
+
+#winsHeader{
+    color: white
+}
+
+#lossesHeader{
+    color: white
 }
 

@@ -1,54 +1,82 @@
 
-var chosenRandomNumber = "";
-var greenCrystal = "";
-var redCrystal = "";
-var blueCrystal = "";
-var yellowCrystal = "";
-var finalScore = []
-// $(document).ready(function){
-//     alert($)
-// }
+var CurrentScore = 0;
+var TargetScore = 0;
+var wins = 0;
+var losses = 0;
+TargetScore = generateANumber(102, 19);
 
-function generateANumber(){
-    var myNumber = Math.floor(Math.random() * 120) + 19;
+blueNum = generateANumber(12, 1);
+greenNum = generateANumber(12, 1);
+yellowNum = generateANumber(12, 1);
+redNum = generateANumber(12, 1);
+
+$(document).ready(function () {
+
+    
+
+
+    $("#randomScore").text(TargetScore)
+
+    $("#button-blue").click(function () {
+        AddingScores(blueNum)
+        CheckWinOrLose()
+    })
+
+    $("#button-red").click(function () {
+        AddingScores(redNum)
+        CheckWinOrLose()
+    })
+
+    $("#button-green").click(function () {
+        AddingScores(greenNum)
+        CheckWinOrLose()
+    })
+
+    $("#button-yellow").click(function () {
+        AddingScores(yellowNum)
+        CheckWinOrLose()
+    })
+
+})
+
+function reset(){
+    location.reload();
+}
+
+function generateANumber(a, b) {
+    var myNumber = Math.floor(Math.random() * a) + b;
     return myNumber
 }
 
-function green(){
-   var myGreen = Math.floor(Math.random() * 12) + 1; 
-   $("#button-green").click(function() {
-    $(this).html("myGreen");
-    myGreen.push(addNumber);
-  });
+function CheckWinOrLose() {
+    if (TargetScore === CurrentScore) {
+        alert(" CONGRATULATIONS YOU MADE IT !!");
+        wins++
+        $("#wins").text(wins)
+    } else if (CurrentScore > TargetScore) {
+        alert("You Lost");
+        losses++
+        $("#losses").text(losses)
+    }
 }
 
-function red(){
-    var myRed = Math.floor(Math.random() * 12) + 1; 
-    return myRed
+function AddingScores(Score) {
+    CurrentScore += Score;
+    $("#currentNumber").text(CurrentScore)
+
 }
 
-function blue(){
-   var myBlue = Math.floor(Math.random() * 12) + 1; 
-   return myBlue
-}
-
-function yellow(){
-   var myYellow = Math.floor(Math.random() * 12) + 1; 
-    return myYellow
-}
-
-function congratulateUser() {
-    if (finalScore === chosenRandomNumber){
-    alert(" CONGRATULATIONS YOU MADE IT !!") && reset the generateANumber 
-}
-
-function reconciliate(){
-    alert("SORRY YOU LOST")
+function restart(){
+    TargetScore = generateANumber(102, 19); 
+    blueNum = generateANumber(12, 1);
+    greenNum = generateANumber(12, 1);
+    yellowNum = generateANumber(12, 1);
+    redNum = generateANumber(12, 1);
+    $("#randomScore").text(TargetScore)
+    CurrentScore = 0;
+    $("#currentNumber").text(CurrentScore) 
 }
 
 
 
 
-// $("button").on("click", function(){
-//     $("div").fadeToggle(1000);
-// })
