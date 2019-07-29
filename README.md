@@ -14,3 +14,6 @@ The player will have to guess the answer, just like in Word Guess. This time, th
 * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
 
 ## [Try it out!](https://parisapahlevan.github.io/Crystals-Collector)
+![Screen Shot 2019-07-29 at 7 02 26 PM](https://user-images.githubusercontent.com/33634179/62088511-8cfd5680-b233-11e9-9c10-cd53a1f66309.png)
+
+## Built with
